@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Grupo de Submarinismo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="corredores.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Argentina <span>Salud</span></h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="explorar.html">Explorar Grupos</a></li>
+                <li><a href="iniciar sesion.html">Iniciar sesión</a></li>
+                <li><a href="registrarse.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detalle-grupo">
+            <div class="grupo-info">
+                <img src="submarinismo.jfif" alt="Grupo de Submarinismo">
+                <h2>Submarinismo</h2>
+                <p>Descubre el fascinante mundo submarino con nuestro grupo de submarinismo. Ofrecemos inmersiones guiadas y cursos de certificación para todos los niveles, desde principiantes que desean aprender a bucear hasta buceadores avanzados que buscan nuevas aventuras. Explora la vida marina y disfruta de una experiencia única bajo el agua.</p>
+                <p><strong>Precio:</strong> $65000 por inmersión</p>
+                <p><strong>Horarios:</strong> Jueves y Sábados a las 9:00 AM</p>
+                <p><strong>Ubicación:</strong> Centro de Buceo Coral</p>
+            </div>
+            <form action="procesar-inscripcion.php" method="post" class="formulario-inscripcion">
+                <h3>Inscripción</h3>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <input type="submit" value="Inscribirse">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contacto">
+            <p>Contacto: info@plataforma.com</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Acerca de nosotros</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
