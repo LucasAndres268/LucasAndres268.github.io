@@ -1,5 +1,5 @@
 /* Estilos generales */
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,6 +37,7 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header nav ul li a:hover {
     color: #196be6;
@@ -45,6 +46,7 @@ header nav ul li a:hover {
 header nav  h1{
     font-size: 18px;
  color: #cecbcb;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 header nav  h1 span{
     
@@ -62,11 +64,14 @@ header nav  h1 span{
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
 }
+
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+
 }
 
 .hero form {
@@ -132,10 +137,11 @@ header nav  h1 span{
 }
 .categorias div p a {
     text-decoration: none; /* Quita la subrayado predeterminado */
-    color: #0467e9; /* Color de texto */
+    color: #0581e7; /* Color de texto */
     border-bottom: 2px solid #c9c6c6; /* Borde azul de 2px en la parte inferior */
     padding-bottom: 2px; /* Espacio para el borde para que no se superponga al texto */
     transition: border-bottom 0.3s ease; /* Transición suave para el borde */
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .categorias div p a:hover {
@@ -175,7 +181,9 @@ header nav  h1 span{
 
 .beneficios li span {
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    color: #333;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 footer {
@@ -299,4 +307,6 @@ padding: 1px;
 margin-left: -25px;
 }
 
-
+h2{
+    font-family: "Bebas Neue", sans-serif;
+}
