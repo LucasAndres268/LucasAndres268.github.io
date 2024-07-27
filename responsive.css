@@ -58,8 +58,19 @@
         color: #fff;
         text-decoration: none;
         font-size: 9px;
+       
+      
         
     }
+    header nav ul  {
+     margin-left: 2rem;
+    
+        
+    }
+    header nav ul li {
+       width: 43px;
+           
+       }
     .hero h1 {
         font-size: 1.1rem;
         margin-bottom: 20px;

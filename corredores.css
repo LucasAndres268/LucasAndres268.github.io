@@ -114,4 +114,9 @@ main {
     .formulario-inscripcion input[type="submit"] {
         font-size: 0.9rem;
     }
+    .formulario-inscripcion {
+     
+        width:85%;
+        
+    }
 }

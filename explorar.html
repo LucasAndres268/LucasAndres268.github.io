@@ -6,6 +6,10 @@
     <title>Explorar Grupos de Entrenamiento Outdoor</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="filtro.css">
+    <style>
+        .grupo { display: none; } /* Ocultar todos los grupos por defecto */
+    </style>
 </head>
 <body>
     <header>
@@ -25,73 +29,64 @@
     <main>
         <section class="filtros">
             <h2>Filtros de Búsqueda</h2>
-            <form action="#" method="GET">
+            <form id="searchForm" action="#" method="GET">
                 <label for="categoria">Categoría:</label>
                 <select name="categoria" id="categoria">
+                    <option value="1">Seleccionar</option>
                     <option value="running">Running</option>
                     <option value="ciclismo">Ciclismo</option>
                     <option value="senderismo">Senderismo</option>
+                    <option value="paracaidismo">Paracaidismo</option>
+                    <option value="pesca">Pesca</option>
+                    <option value="submarinismo">Submarinismo</option>
+                    <option value="">Todos los Grupos</option>
                 </select>
-                <label for="ubicacion">Ubicación:</label>
-                <input type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad, código postal">
-                <label for="dias">Días disponibles:</label>
-                <input type="checkbox" id="lunes" name="dias" value="lunes">
-                <label for="lunes">Lunes</label>
-                <input type="checkbox" id="martes" name="dias" value="martes">
-                <label for="martes">Martes</label>
-                <input type="checkbox" id="miercoles" name="dias" value="miercoles">
-                <label for="miercoles">Miércoles</label>
-                <input type="checkbox" id="jueves" name="dias" value="jueves">
-                <label for="jueves">Jueves</label>
-                <input type="checkbox" id="viernes" name="dias" value="viernes">
-                <label for="viernes">Viernes</label>
-                <input type="checkbox" id="sabado" name="dias" value="sabado">
-                <label for="sabado">Sábado</label>
-                <input type="checkbox" id="domingo" name="dias" value="domingo">
-                <label for="domingo">Domingo</label>
+                
                 <button type="submit">Buscar Grupos</button>
+                <button type="button" id="clearFilters">Limpiar Filtros</button>
             </form>
         </section>
         <h3>Grupos Disponibles</h3>
         <section class="grupos">
-            <div class="grupo">
+            <div class="grupo" data-categoria="running">
                 <img src="running2.jfif" alt="Grupo de Running">
                 <h3>Corredores Urbanos</h3>
                 <p>Un grupo para correr por la ciudad. Todos los niveles bienvenidos. Únete a nuestras sesiones semanales para mantenerte en forma y explorar diferentes rutas urbanas.</p>
                 <a href="corredores.html">Ver detalles</a>
             </div>
-            <div class="grupo">
+            <div class="grupo" data-categoria="senderismo">
                 <img src="senderismo.jfif" alt="Grupo de Senderismo">
                 <h3>Senderismo</h3>
                 <p>Explora rutas naturales y disfruta del aire libre con nuestro grupo de senderismo. Ofrecemos excursiones para todos los niveles, desde principiantes hasta expertos.</p>
                 <a href="senderismo.html">Ver detalles</a>
             </div>
-            <div class="grupo">
+            <div class="grupo" data-categoria="ciclismo">
                 <img src="ciclista.jfif" alt="Grupo de Ciclismo">
                 <h3>Ciclistas del Parque</h3>
                 <p>Disfruta de rutas de ciclismo por el parque con un grupo que se adapta a tu nivel. Equipos y asistencia están disponibles para ciclistas de todos los niveles.</p>
                 <a href="ciclismo.html">Ver detalles</a>
             </div>
-            <div class="grupo">
+            <div class="grupo" data-categoria="pesca">
                 <img src="pesca.jpg" alt="Grupo de Pesca">
                 <h3>Pesca</h3>
                 <p>Únete a nuestro grupo de pesca y disfruta de días tranquilos en el agua. Compartimos técnicas y ubicaciones para todo tipo de pesca, desde principiantes hasta expertos.</p>
                 <a href="pesca.html">Ver detalles</a>
             </div>
-            <div class="grupo">
+            <div class="grupo" data-categoria="paracaidismo">
                 <img src="paracaidismo.jpg" alt="Grupo de Paracaidismo">
                 <h3>Paracaidismo</h3>
                 <p>Experimenta la emoción de volar con nuestro grupo de paracaidismo. Ofrecemos saltos en tándem y entrenamientos para aquellos que buscan aventurarse en este emocionante deporte.</p>
                 <a href="paracaidismo.html">Ver detalles</a>
             </div>
-            <div class="grupo">
+            <div class="grupo" data-categoria="submarinismo">
                 <img src="submarinismo.jfif" alt="Grupo de Submarinismo">
                 <h3>Submarinismo</h3>
                 <p>Descubre el mundo submarino con nosotros. Ofrecemos inmersiones guiadas y cursos de certificación para todos los niveles, desde principiantes hasta buceadores avanzados.</p>
                 <a href="submarinismo.html">Ver detalles</a>
             </div>
         </section>
-        
+   
+
     </main>
 
     <footer>
@@ -106,5 +101,46 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+   document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío del formulario
+            const categoriaSeleccionada = document.getElementById('categoria').value;
+            const grupos = document.querySelectorAll('.grupo');
+
+            // Ocultar todos los grupos
+            grupos.forEach(grupo => {
+                grupo.style.display = 'none';
+            });
+
+            // Mostrar solo los grupos que coinciden con la categoría seleccionada
+            if (categoriaSeleccionada) {
+                grupos.forEach(grupo => {
+                    if (grupo.dataset.categoria === categoriaSeleccionada) {
+                        grupo.style.display = 'block';
+                    }
+                });
+            } else {
+                // Si no hay categoría seleccionada, mostrar todos los grupos
+                grupos.forEach(grupo => {
+                    grupo.style.display = 'block';
+                });
+            }
+        });
+
+        // Agregar el evento para limpiar filtros
+    // Agregar el evento para limpiar filtros
+    document.getElementById('clearFilters').addEventListener('click', function() {
+        // Reiniciar el select
+        document.getElementById('categoria').value = ''; 
+        
+        const grupos = document.querySelectorAll('.grupo');
+
+        // Mostrar todos los grupos
+        grupos.forEach(grupo => {
+            grupo.style.display = ''; // Cambiado a 'block' para mostrar los grupos
+        });
+    });
+    </script>
 </body>
 </html>
