@@ -1,0 +1,47 @@
+.gallery {
+    display: block;
+   
+    /* Permite que los ítems se envuelvan en múltiples líneas */
+    gap: 1rem; /* Añade espacio entre los elementos de la galería */
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center; /* Centramos el texto */
+    border: 2px solid #ddd; /* Añade un borde sólido */
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para darle profundidad */
+    margin: 1rem auto; /* Centramos el contenedor */
+    max-width: 1300px;
+    height: 500px;
+    overflow: auto;
+}
+.gallery-img{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 12px;
+    padding: 40px;
+    justify-content:center;
+}
+.gallery-item {
+   width: 100%;
+  
+}
+
+.gallery-item img {
+    width: 100% ;/* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 4px; /* Bordes redondeados en las imágenes */
+    transition: transform 0.3s ease; /* Efecto de transición para el hover */
+    margin: 12px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .gallery-img{
+  
+    grid-template-columns: repeat(auto-fill, 330px);
+   
+}
+}

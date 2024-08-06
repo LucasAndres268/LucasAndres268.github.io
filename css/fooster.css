@@ -1,0 +1,22 @@
+/* Estilo del footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Empuja el footer al fondo de la página */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #e4cf16;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

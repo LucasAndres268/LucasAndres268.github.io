@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+ 
+  
+}
+.banner {
+  background: url('img/a.png') no-repeat center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.banner h2 {
+  font-size: 2em;
+  margin: 0;
+}
+.banner p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+.banner a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+.banner a:hover {
+  text-decoration: underline;
+}
+.menu {
+  padding: 20px;
+}
+.menu h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+.menu hr {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+.menu p.text {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+}
+.image-wrap-text {
+  float: left;
+  margin-right: 15px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.gallery a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+.gallery div {
+  margin-top: 5px;
+}
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.masonry figure {
+  flex: 1 1 calc(33.333% - 15px);
+  margin: 0;
+}
+.masonry img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.masonry figcaption {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+}
+.highlight-text {
+  color: #0066cc;
+  text-decoration: none;
+}
+.highlight-text:hover {
+  text-decoration: underline;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.flex-item {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.flex-column {
+  flex: 1;
+}
+.full-width {
+  flex: 100%;
+}
+.flex-item-stretch {
+  flex: 1;
+}
+.flex-item-stretch-4 {
+  flex: 4;
+}
+.add-top-margin-small {
+  margin-top: 20px;
+}
+.add-bottom-margin-small {
+  margin-bottom: 20px;
+}

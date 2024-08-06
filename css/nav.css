@@ -1,0 +1,78 @@
+/* Centrando el logo en la barra de navegación */
+.navbar-brand {
+    flex: 1;
+    text-align: center;
+  }
+  .navbar-brand a{
+    color: rgb(19, 127, 216);
+  }
+  
+  /* Ajustando el padding y márgenes para los elementos de navegación */
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar-nav a {
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+
+  .navbar-nav a:hover{
+    color: #ebeff5;
+  }
+  
+  /* Estilo adicional para la barra de navegación */
+  .navbar {
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  /* Opcional: Mejorando el estilo del toggler */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  .navbar-toggler-icon {
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+  }
+  
+  /* Opcional: Mejorando el estilo de los enlaces */
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Opcional: Estilo adicional para el enlace activo */
+  .nav-link.active {
+    color: #0d6efd;
+  }
+  .navbar img{
+    width: 68px;
+    height: auto;
+    border-radius:  12%;
+    margin-left: 1rem;
+  }
+  .navbar-brand {
+    color: #f5efef;
+  }
+  #logo h2{
+    font-size: 1.6rem;
+color: #ebeff5;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+  span{
+    color: #ec3203;
+  }
+  @media (max-width: 768px) {
+    .navbar{
+      padding: 14px;
+    }
+    .navbar img{
+      width: 58px;
+  float: inline-start;
+     
+    }
+}
