@@ -42,10 +42,16 @@
     margin-top: 1rem; /* Espaciado superior */
   }
   
-
-  @media (max-width: 768px) {
+  @media (max-width: 560px) {
     .about-us p {
-      max-width: 80%;
+      max-width: 100%;
+      font-size: 14.5px;
+     
+    }
+}
+  @media (min-width: 560px) and  (max-width: 868px) {
+    .about-us p {
+      max-width: 100%;
       font-size: 14.5px;
      
     }
