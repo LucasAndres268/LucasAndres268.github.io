@@ -1,0 +1,27 @@
+#whatsapp-div {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff; /* Color de WhatsApp */
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Icono de WhatsApp */
+#whatsapp-div img {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Estilo del texto */
+#whatsapp-div span {
+    font-size: 16px;
+    color: #000;
+}

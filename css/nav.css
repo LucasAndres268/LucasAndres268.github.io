@@ -25,8 +25,11 @@
   
   /* Estilo adicional para la barra de navegación */
   .navbar {
+    width: 100%;
+    position: fixed;
     padding: 0.5rem 1rem;
     background-color: #f8f9fa;
+    z-index: 1000;
   }
   
   /* Opcional: Mejorando el estilo del toggler */
@@ -78,3 +81,19 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    
   
     }
+    @media (max-width: 440px) {
+      .navbar{
+        padding: 14px;
+      }
+      .navbar img{
+        width: 58px;
+    float: inline-start;
+       
+      }
+      .navbar img{
+      display: none;
+      }
+     
+    
+      }
+  
