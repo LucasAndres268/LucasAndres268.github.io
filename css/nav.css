@@ -69,7 +69,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   span{
     color: #ec3203;
   }
-  @media(min-width: 420px) and (max-width: 768px) {
+  @media(min-width: 400px) and (max-width: 768px) {
     .navbar{
       padding: 14px;
     }
@@ -81,7 +81,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    
   
     }
-    @media (max-width: 420px) {
+    @media (max-width: 400px) {
       .navbar{
         padding: 14px;
       }
