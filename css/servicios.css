@@ -48,9 +48,17 @@
     margin: 0.5rem 0;
     color: #c5c4c4
   }
-  @media (max-width: 768px) {
-    .service-item2{
-      display: block;
-     
-    }
-}
+ 
+  
+    @media (max-width: 768px) {
+      .service-item{
+background-color: #373636;
+       
+       
+      }
+
+      .service-item2{
+        display: block;
+       
+      }
+  }
