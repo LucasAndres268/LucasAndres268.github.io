@@ -14,7 +14,7 @@
   }
   .navbar-nav a {
     font-size: 20px;
-    color: rgb(73, 73, 73);
+    color: rgb(245, 236, 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    
   }
@@ -28,7 +28,7 @@
     width: 100%;
     position: fixed;
     padding: 0.5rem 1rem;
-    background-color: #f8f9fa;
+    background-color: #087ce9 !important;
     z-index: 1000;
   }
   
@@ -52,7 +52,7 @@
     color: #0d6efd;
   }
   .navbar img{
-    width: 68px;
+    width: 78px;
     height: auto;
     border-radius:  12%;
     margin-left: 1rem;
@@ -81,7 +81,13 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    
   
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
+      #logo h2{
+  
+   font-size: 1.3rem;
+   color: #ebeff5;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
       .navbar{
         padding: 14px;
       }

@@ -2,7 +2,7 @@
     position: relative; /* Necesario para que el pseudo-elemento se posicione relativo a este contenedor */
     width: 100%;
     height: 50vh; /* Altura igual al 100% de la ventana del navegador */
-    background-image: url('../img/p.1.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/a.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir el área del div */
     background-position: center; /* Centra la imagen en el div */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -25,13 +25,15 @@
     background: rgba(0, 0, 0, 0.5); /* Color negro semi-transparente para la sombra */
     z-index: 1; /* Asegura que esté encima de la imagen de fondo pero debajo del contenido */
 }
-
+.portada span{
+    color: #087ce9;
+}
 .portada h1 {
     font-size: 3rem; /* Tamaño del texto */
     margin: 0;
     position: relative; /* Necesario para que el texto esté por encima del pseudo-elemento */
     z-index: 2; /* Asegura que el texto esté por encima de la sombra */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .portada img{
     width: 74px;
@@ -40,12 +42,16 @@
   margin-left: 5px;
 }
 @media (max-width: 568px) {
+    .portada{
+        height: 20rem;
+    }
 .portada h1 {
     font-size: 1.8rem; /* Tamaño del texto */
    
 }
 .portada img{
     width: 54px;
+   
 
 }
 }

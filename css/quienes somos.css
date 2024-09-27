@@ -2,9 +2,9 @@
 .about-us {
     display: block;
     padding: 2rem;
-    background: #f4f4f4;
+    background: #3874ce;
     text-align: center; /* Centramos el texto */
-    border: 2px solid #ddd; /* Añade un borde sólido */
+    border: 1px solid #adabab; /* Añade un borde sólido */
     border-radius: 6px; /* Bordes redondeados */
     box-shadow: 0 1px 2px rgba(14, 13, 13, 0.1); /* Sombra para darle profundidad */
     margin: 1rem auto; /* Centramos el contenedor */
@@ -14,23 +14,23 @@
   
   .about-us h1 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #eee5e5;
   }
   
   .about-us h2 {
     margin: 1rem 0;
-    color: #555;
+    color: #9e9e9e;
   }
   
   .about-us p {
     max-width: 55%;
     margin: 0.3rem 0;
-    font-size: 15px;
+    font-size: 12px;
    
    
     margin: auto;
     text-align: center;
-    color: #181717;
+    color: #cecbcb;
     padding: 12px;
   }
   
@@ -45,14 +45,14 @@
   @media (max-width: 560px) {
     .about-us p {
       max-width: 100%;
-      font-size: 14.5px;
+      font-size: 12.5px;
      
     }
 }
   @media (min-width: 560px) and  (max-width: 868px) {
     .about-us p {
       max-width: 100%;
-      font-size: 14.5px;
+      font-size: 13.5px;
      
     }
 }

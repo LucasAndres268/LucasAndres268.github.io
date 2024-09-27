@@ -1,6 +1,6 @@
 /* Estilo del footer */
 .footer {
-    background-color: #333;
+    background-color: #0a0a0a;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -13,8 +13,9 @@
 }
 
 .footer a {
-    color: #e4cf16;
+    color:rgb(119, 119, 119);
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .footer a:hover {

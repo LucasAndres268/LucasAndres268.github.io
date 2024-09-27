@@ -4,9 +4,9 @@
     /* Permite que los ítems se envuelvan en múltiples líneas */
     gap: 1rem; /* Añade espacio entre los elementos de la galería */
     padding: 2rem;
-    background: #f4f4f4;
+    background: #3874ce;
     text-align: center; /* Centramos el texto */
-    border: 2px solid #ddd; /* Añade un borde sólido */
+    border: 1px solid #adabab; /* Añade un borde sólido */
     border-radius: 8px; /* Bordes más redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para darle profundidad */
     margin: 1rem auto; /* Centramos el contenedor */
