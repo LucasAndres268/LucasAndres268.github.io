@@ -1,3 +1,12 @@
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Ajusta la altura de la subida */
+    }
+}
+
 #whatsapp-div {
     position: fixed;
     bottom: 20px;
@@ -6,16 +15,17 @@
     color: white;
     padding: 15px;
     border-radius: 50px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     cursor: pointer;
     z-index: 1000;
+    animation: bounce 1s infinite; /* Aplicar la animación */
 }
 
 /* Icono de WhatsApp */
 #whatsapp-div img {
-    width: 50px;
+    width: 35px;
     height: 40px;
     margin-right: 10px;
     border-radius: 1rem;
@@ -23,6 +33,6 @@
 
 /* Estilo del texto */
 #whatsapp-div span {
-    font-size: 16px;
+    font-size: 13px;
     color: #ebe3e3;
 }
