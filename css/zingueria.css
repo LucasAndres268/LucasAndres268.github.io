@@ -61,3 +61,10 @@ padding: 1rem;
   background: #f4f4f4; /* Color de fondo */
   border-radius: 6px; /* Bordes redondeados */
 }
+@media (max-width: 768px) {
+  .product-item img{
+    width: 140px;
+    height: 124px;
+    border-radius: 12px;
+  }
+}

@@ -2,7 +2,7 @@
     position: relative; /* Necesario para que el pseudo-elemento se posicione relativo a este contenedor */
     width: 100%;
     height: 50vh; /* Altura igual al 100% de la ventana del navegador */
-    background-image: url('../img/a.png'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/a.ng'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir el área del div */
     background-position: center; /* Centra la imagen en el div */
     background-repeat: no-repeat; /* Evita que la imagen se repita */

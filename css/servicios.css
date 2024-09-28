@@ -53,12 +53,20 @@
     @media (max-width: 768px) {
       .service-item{
 background-color: #373636;
+width: 234px;
+height: 350px;
+margin: auto;
+margin-top: 10px;
+
+
+
        
        
       }
 
       .service-item2{
         display: block;
+        width: 445px;
        
       }
   }
