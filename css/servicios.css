@@ -3,7 +3,7 @@
   
     flex-wrap: wrap; /* Permite que los ítems se envuelvan en múltiples líneas */
     padding: 2rem;
-    background: #1f72d8;
+    background: #434444;
     text-align: center; /* Centramos el texto */
     border: 1px solid #adabab; /* Añade un borde sólido */
     border-radius: 6px; /* Bordes redondeados */
@@ -15,6 +15,9 @@
   .services h2 {
     width: 100%;
     margin-bottom: 1.5rem;
+    color: #eee5e5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 26px;
   }
   .service-item2{
     display: flex;
@@ -26,7 +29,7 @@
   
     margin: 4px;
     padding: 1rem;
-    background: #048ef0; /* Fondo blanco para cada ítem */
+    background: #91908f; /* Fondo blanco para cada ítem */
     border-radius: 6px; /* Bordes redondeados en los ítems */
     box-shadow: 0 1px 2px rgba(14, 13, 13, 0.1); /* Sombra para darle profundidad */
   
@@ -41,32 +44,50 @@
   }
   
   .service-item h3 {
-    color: #aaa8a8;
+    color: #eee5e5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 26px;
   }
   
   .service-item p {
+    font-size: 14px;
     margin: 0.5rem 0;
-    color: #c5c4c4
+    color: #ebe9e9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
  
   
     @media (max-width: 768px) {
       .service-item{
 background-color: #373636;
-width: 234px;
-height: 350px;
+width: 300px;
+height: 300px;
 margin: auto;
-margin-top: 10px;
+margin-top: 4px;
 
 
 
        
        
       }
-
+      .services h2 {
+      
+        font-size: 18px;
+      
+      }
       .service-item2{
         display: block;
         width: 445px;
        
+      }
+     
+      .service-item h3 {
+        color: #eee5e5;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+      }
+      .service-item p {
+        font-size: 12px;
+  
       }
   }

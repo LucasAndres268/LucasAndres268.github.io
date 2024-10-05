@@ -4,7 +4,7 @@
     /* Permite que los ítems se envuelvan en múltiples líneas */
     gap: 1rem; /* Añade espacio entre los elementos de la galería */
     padding: 2rem;
-    background: #1f72d8;
+    background: #434444;
     text-align: center; /* Centramos el texto */
     border: 1px solid #adabab; /* Añade un borde sólido */
     border-radius: 8px; /* Bordes más redondeados */
@@ -14,6 +14,11 @@
     height: 500px;
     overflow: auto;
 }
+#Galeria h1{
+    color: #eee5e5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 26px;
+}
 .gallery-img{
     display: grid;
     grid-template-columns: repeat(3, 250px);
@@ -21,6 +26,7 @@
     padding: 40px;
     justify-content:center;
 }
+
 .gallery-item {
    width: 100%;
   
@@ -43,5 +49,9 @@
   
     grid-template-columns: repeat(auto-fill, 240px);
    
+}
+#Galeria h1{
+    
+    font-size: 18px;
 }
 }

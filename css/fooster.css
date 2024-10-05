@@ -1,21 +1,39 @@
 /* Estilo del footer */
 .footer {
-    background-color: #000000;
+    background-color: #727375;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: auto; /* Empuja el footer al fondo de la página */
+}
+#Contactos h1{
+    color: #eee5e5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+}
+.contact-info{
+  
+margin: 13px;
+
 }
 
 .footer p {
-    margin: 0;
+   
     font-size: 14px;
+    color: #dddad9;
+   
+    margin: 1px;
+    height: 3rem;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
 }
 
 .footer a {
-    color:rgb(119, 119, 119);
+    color:rgb(255, 251, 248);
     text-decoration: none;
     font-size: 1rem;
+ 
 }
 
 .footer a:hover {

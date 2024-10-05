@@ -1,21 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+
 /* Centrando el logo en la barra de navegación */
 .navbar-brand {
     flex: 1;
     text-align: center;
   }
   .navbar-brand a{
-    color: rgb(19, 127, 216);
+    color: rgb(97, 103, 112);
   }
   
   /* Ajustando el padding y márgenes para los elementos de navegación */
   .navbar-nav {
     margin-left: auto;
     margin-right: auto;
+   
   }
+  .navbar-nav :hover{
+ background-color: #dd5a3a;
+   
+  }
+
   .navbar-nav a {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(245, 236, 236);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
    
   }
 
@@ -28,7 +38,7 @@
     width: 100%;
     position: fixed;
     padding: 0.5rem 1rem;
-    background-color: #087ce9 !important;
+    background-color: #727375 !important;
     z-index: 1000;
   }
   
@@ -61,9 +71,9 @@
     color: #f5efef;
   }
   #logo h2{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 color: #ebeff5;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: "Edu AU VIC WA NT Dots", cursive;
 
   }
   span{
@@ -84,9 +94,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     @media (max-width: 500px) {
       #logo h2{
   
-   font-size: 1.3rem;
+   font-size: 1.1rem;
    color: #ebeff5;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
       }
       .navbar{
         padding: 14px;
